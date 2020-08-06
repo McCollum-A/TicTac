@@ -1,0 +1,11 @@
+S:\Archive\VisualBasic\TicTac\TicTac\bin\Debug\TicTac.exe.config
+S:\Archive\VisualBasic\TicTac\TicTac\bin\Debug\TicTac.exe
+S:\Archive\VisualBasic\TicTac\TicTac\bin\Debug\TicTac.pdb
+S:\Archive\VisualBasic\TicTac\TicTac\bin\Debug\TicTac.xml
+S:\Archive\VisualBasic\TicTac\TicTac\obj\Debug\TicTac.vbprojResolveAssemblyReference.cache
+S:\Archive\VisualBasic\TicTac\TicTac\obj\Debug\TicTac.FormGame.resources
+S:\Archive\VisualBasic\TicTac\TicTac\obj\Debug\TicTac.Resources.resources
+S:\Archive\VisualBasic\TicTac\TicTac\obj\Debug\TicTac.vbproj.GenerateResource.Cache
+S:\Archive\VisualBasic\TicTac\TicTac\obj\Debug\TicTac.exe
+S:\Archive\VisualBasic\TicTac\TicTac\obj\Debug\TicTac.xml
+S:\Archive\VisualBasic\TicTac\TicTac\obj\Debug\TicTac.pdb

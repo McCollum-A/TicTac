@@ -7,6 +7,7 @@
     Public Grid(2, 2) As Integer 'This 2D array mimics the game board to track win conditions via positive/negative integers
     Public GridRow As Integer = 0 'Holding variable for communicate UI clicks to the win condition grid
     Public GridColumn As Integer = 0 'Holding variable for communicate UI clicks to the win condition grid
+    Public PingYes As Boolean 'To confirm is opponent's computer is available
     Private Sub FormGame_Load(sender As Object, e As EventArgs) Handles Me.Load
         Playing = False 'On load, the game is not being played
         GameOver = False 'On load, the game is not won
@@ -18,10 +19,12 @@
             CurrentSpot.text = "X" '[selected label object].text property
             PlayerTurn = 2 'Set the next player's turn
             LblPlayer.Text = "Player: O" 'Display next player's turn
+            CurrentSpot.ForeColor = Color.Blue 'Set's the color of text once chosen
         ElseIf Playing = True And CurrentTurn < 9 And PlayerTurn = 2 And CurrentSpot.text <> "X" Then
             CurrentSpot.text = "O"
             PlayerTurn = 1
             LblPlayer.Text = "Player: X"
+            CurrentSpot.ForeColor = Color.Red
         Else
             Return 'If for some reason the if/then test fails, end this Sub
         End If
@@ -170,6 +173,13 @@
             MessageBox.Show("Please choose a square that has not yet been claimed.")
         Else
             SpotInUse = False
+        End If
+    End Function
+    Function PlayOnline() As Boolean
+        If My.Computer.Network.Ping(" ") Then
+            PingYes = True
+        Else
+            PingYes = False
         End If
     End Function
 End Class

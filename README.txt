@@ -5,6 +5,8 @@ Vb.net
 
 This program is a simple game of tic-tac-toe.
 
+most recent update: added color change to chosen squares
+
 local multiplayer is working.
 Online multiplayer is being written.
 
